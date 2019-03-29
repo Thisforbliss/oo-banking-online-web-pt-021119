@@ -1,6 +1,6 @@
 class BankAccount
 attr_accessor :balance, :status, :broke
-attr_reader :name
+attr_reader :name, 
 
 @@all = []
 
@@ -10,7 +10,11 @@ def initialize(name)
   @status = "open"
   @broke = 0
   @@all << self
+<<<<<<< HEAD
   #binding.pry
+=======
+  binding.pry
+>>>>>>> 40bd36368bd1b1dd8ef009fc1c60a5e0c27f21b3
 end
 
  def self.all

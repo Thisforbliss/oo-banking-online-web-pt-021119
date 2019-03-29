@@ -1,5 +1,6 @@
 class Transfer
   
+<<<<<<< HEAD
   attr_accessor :name, :sender, :transfer, :receiver, :status, :amount
   
   def initialize(name, sender, transfer)
@@ -8,6 +9,13 @@ class Transfer
     @receiver = sender
     @status = "pending"
     @amount = transfer
+=======
+  attr_accessor :name, :sender, :transfer, :receiver
+  def initialize(name, sender, transfer)
+    @name = sender
+    @sender = name
+    @receiver = []
+>>>>>>> 40bd36368bd1b1dd8ef009fc1c60a5e0c27f21b3
     #binding.pry
   end
 
